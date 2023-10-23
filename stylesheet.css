@@ -5,9 +5,7 @@
     padding: 0;
 }
 :root{
-    font-family: 'Lilita One', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
 }
 
 /* Stili header */
@@ -63,29 +61,35 @@ header a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
     position: relative;
+    width: 100vw;
+    z-index: 1;
 }
 #biggest_title{
     font-size: 40px;
+    display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 40px 300px;
-    padding-top: 100px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.jumbo_container{
+    width: 100%;
+    flex-wrap: nowrap;
+    display: flex;
 }
 .left-side{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     flex-direction: column;
-    padding: 0 300px;
-}
-.left-side p{
-    width: 28%;
-    padding-bottom: 20px;
+    width: 30%;
+    padding: 0 100px;
 }
 .left-side input , .left-side span{
     margin-bottom: 25px;
+}
+.right-side{
+    width: 70%;
 }
 .fa-arrow-down{
     color: black;
@@ -93,13 +97,17 @@ header a{
     padding-top: 40px;
     padding-bottom: 10px;
 }
-/* Fix della foto del client */
-#jumbo_fix{
-    width: 50%;
-    height: auto;
+/* .white_space{
+    width: 100vw;
+    height: 50px;
     position: absolute;
-    top: 40%;
-    left: 35%;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+} */
+/* Fix della foto del client */
+.right-side img{
+    max-width: 100%;
 }
 
 /* Stili per la sezione scelta dei piani tariffari */
