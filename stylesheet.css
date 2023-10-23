@@ -1,0 +1,124 @@
+/* Stili generali della pagina */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-family: 'Lilita One', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Stili header */
+/* Contenitore principale header */
+.header_container{
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+header a{
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    font-size: 15px;
+}
+/* Side of header */
+.marketing-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.help-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-right: 30px;
+}
+/* Dropbox logo header */
+#logo_header{
+    margin: 10px;
+}
+
+/* Button blue setup */
+.bgblue_button{
+    padding: 8px 12px;
+    background-color: #0061ff;
+    color: white;
+    border: 0;
+}
+
+/* Sezione sotto l'header con il bg azzurro */
+.bgblue_section{
+    background-color: #b4d0e7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+}
+#biggest_title{
+    font-size: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 300px;
+    padding-top: 100px;
+}
+.left-side{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 300px;
+}
+.left-side p{
+    width: 28%;
+    padding-bottom: 20px;
+}
+.left-side input , .left-side span{
+    margin-bottom: 25px;
+}
+.fa-arrow-down{
+    color: black;
+    font-size: 50px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+/* Fix della foto del client */
+#jumbo_fix{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+
+/* Stili per la sezione scelta dei piani tariffari */
+.businessplan_container{
+    width: 100vw;
+    padding-top: 200px;
+    padding-left: 350px;
+    padding-right: 350px;
+    display: flex;
+    justify-content: flex-start;
+}
+.businessplan_container h2{
+    padding-bottom: 40px;
+    font-size: 35px;
+}
+.businessplan_container label{
+    margin-right: 30px;
+    padding-bottom: 40px;
+}
+.radio-modify{
+    margin-right: 5px;
+}
