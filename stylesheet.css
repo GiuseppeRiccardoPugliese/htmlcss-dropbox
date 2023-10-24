@@ -90,7 +90,6 @@ header a {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    flex-direction: column;
     width: 30%;
 }
 
@@ -110,14 +109,14 @@ header a {
     margin-top: 60px;
 }
 
-.white_space {
+/* .white_space {
     width: 100vw;
     height: 50px;
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: 0;
-}
+} */
 
 /* Fix della foto del client */
 .right-side img {
@@ -127,14 +126,10 @@ header a {
 /* Stili per la SECONDA sezione scelta dei piani tariffari */
 .businessplan {
     width: 100vw;
-    display: flex;
-    justify-content: center;
 }
 
 .businessplan_container {
     max-width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .sect_title {
@@ -159,14 +154,14 @@ header a {
 
 /* Colonne con i piani tariffari */
 .col_container {
-    width: 100%;
+    width: 70%;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
 }
 
 .col {
-    width: calc((100% / 3)- 20px);
+    width: calc((100% / 3) - 20px);
     min-height: 800px;
     border: 1px solid #bfbfd1;
     line-height: 2;
@@ -185,7 +180,9 @@ header a {
 
 .fa-user,
 .fa-folder,
-.fa-share-nodes {
+.fa-share-nodes,
+.fa-building,
+.fa-users {
     padding-right: 5px;
 }
 
