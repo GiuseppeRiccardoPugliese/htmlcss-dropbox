@@ -60,6 +60,38 @@ header a {
     margin: 10px;
 }
 
+/* Dropdown sulla nav bar */
+li.dropdown {
+    display: inline-block;
+    display: flex;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 50px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /* Button blue setup */
 .bgblue_button {
     padding: 8px 15px;
@@ -74,9 +106,8 @@ header a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    /* z-index: 4; */
 }
 
 .under-header_container {
@@ -109,7 +140,6 @@ header a {
 
 .right-side {
     width: 70%;
-    /* z-index: 2; */
 }
 
 .fa-arrow-down {
@@ -119,19 +149,13 @@ header a {
     padding-right: 90px;
 }
 
-.white_space {
-    width: 100vw;
-    height: 50px;
-    position: absolute;
-    background-color: #f5f5f5;
-    bottom: 0;
-    left: 0;
-    z-index: 3;
-}
-
 /* Fix della foto del client */
 .right-side img {
     max-width: 100%;
+    /* position: relative;
+    top: 0;
+    left: 0; */
+    margin-bottom: -70px;
 }
 
 /* Stili per la SECONDA sezione scelta dei piani tariffari */
