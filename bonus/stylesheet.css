@@ -1,0 +1,534 @@
+/* Stili generali della pagina */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Stili header */
+/* Contenitore principale header */
+.header_container {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header a {
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+    font-size: 15px;
+}
+
+/* Side of header */
+.marketing-side {
+    display: flex;
+    padding: 10px;
+}
+
+.header_side {
+    display: flex;
+}
+
+.marketing-side li {
+    display: flex;
+}
+
+.help-side {
+    display: flex;
+    padding: 10px;
+    padding-right: 30px;
+}
+
+.help-side li {
+    display: flex;
+}
+
+/* Dropbox logo header */
+#logo_header {
+    margin: 10px;
+}
+
+/* Button blue setup */
+.bgblue_button {
+    padding: 8px 15px;
+    background-color: #0061ff;
+    color: white;
+    border: 0;
+}
+
+/* PRIMA Sezione sotto l'header con il bg azzurro */
+.bgblue_section {
+    background-color: #b4d0e7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    /* z-index: 4; */
+}
+
+.under-header_container {
+    max-width: 60%;
+}
+
+#biggest_title {
+    font-size: 45px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.jumbo_container {
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.left-side {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 30%;
+}
+
+.left-side input,
+.left-side span,
+.left-side p {
+    margin-bottom: 25px;
+}
+
+.right-side {
+    width: 70%;
+    /* z-index: 2; */
+}
+
+.fa-arrow-down {
+    color: black;
+    font-size: 50px;
+    margin-top: 60px;
+    padding-right: 90px;
+}
+
+.white_space {
+    width: 100vw;
+    height: 50px;
+    position: absolute;
+    background-color: #f5f5f5;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+/* Fix della foto del client */
+.right-side img {
+    max-width: 100%;
+}
+
+/* Stili per la SECONDA sezione scelta dei piani tariffari */
+.businessplan {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.businessplan_container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sect_title {
+    padding: 40px 0px;
+    font-size: 35px;
+    width: 100%;
+}
+
+.businessplan label {
+    margin-right: 30px;
+    padding-bottom: 40px;
+}
+
+.radio-modify {
+    margin-right: 5px;
+}
+
+.select_plan {
+    display: flex;
+    width: 100%
+}
+
+/* Colonne con i piani tariffari */
+.col_container {
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    width: calc((100% / 3) - 20px);
+    min-height: 800px;
+    border: 1px solid #bfbfd1;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    border-bottom: 1px solid #bfbfd1;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-user,
+.fa-folder,
+.fa-share-nodes,
+.fa-building,
+.fa-users {
+    padding-right: 5px;
+}
+
+.try-or-buy .bgblue_button {
+    width: 100%;
+}
+
+.pack_type,
+.content_pack,
+.try-or-buy,
+.div_space,
+.highlights {
+    padding: 30px;
+}
+
+.plan_row i {
+    padding-top: 7px;
+}
+
+.plan_row {
+    display: flex;
+    margin: 10px 0;
+}
+
+.try-or-buy input {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.div_space {
+    width: 30%;
+    margin-left: 30px;
+    border-top: 1px solid #bfbfd1;
+}
+
+.highlights h5 {
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.highlights ul li:before {
+    content: '✓';
+    color: #0061ff;
+}
+
+/* Row sotto le 3 colonne */
+.row_container {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #bfbfd1;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.blue-button {
+    margin-right: 15px;
+}
+
+.pack-type_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Stili della parte di lettura Dropbox */
+.read_container {
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.read_left img {
+    max-width: 100%;
+}
+
+.read_left {
+    width: 50%;
+}
+
+.read_right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+.read_right p,
+.read_right .white_button,
+.read_right h3 {
+    margin: 20px;
+}
+
+.white_button {
+    padding: 8px 12px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* Stili sezione operazioni possibili con dropbox */
+.dropbox_operations {
+    width: 100%;
+    display: flex;
+}
+
+.col_oper {
+    width: calc((100% / 3) - 40px);
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.img_oper img {
+    max-width: 100%;
+}
+
+.col_oper h3 {
+    margin: 15px 0;
+}
+
+/* Stili count persone che utilizzano Dropbox */
+.count_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.count_container h2 {
+    width: 40%;
+}
+
+/* Stili per la sezione delle aziende */
+.agency_container {
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+}
+
+.agency.center {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+.agency {
+    width: calc(100% / 3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon {
+    width: calc(100% / 2);
+    height: calc(100% / 2);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+.icon:hover {
+    border: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.icon img {
+    max-width: 60%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.green {
+    background-color: #a2d39b;
+}
+
+.purple {
+    background-color: #61082b;
+}
+
+.blue {
+    background-color: #0093ce;
+}
+
+.red {
+    background-color: #ff1c1c;
+}
+
+.azzurro {
+    background-color: #b4d0e7;
+}
+
+.darkblue {
+    background-color: #0d2481;
+}
+
+.yellow {
+    background-color: #ffd830;
+}
+
+/* Sezione centrale per le aziende */
+.some_text {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.some_text p {
+    margin-bottom: 30px;
+}
+
+.agency.center .div_space {
+    margin-left: 10%;
+}
+
+.mid_svg {
+    padding: 10% 0 10% 10%;
+}
+
+/* Stili per la sezione Dropbox nella tua azienda */
+.join_agency {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10%;
+}
+
+.join_agency h2 {
+    color: #621231;
+    width: 50%;
+}
+
+.white_button-nobord {
+    padding: 8px 12px;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+/* Inizio degli stili per il FAQ */
+.faq_container {
+    width: 100%;
+}
+
+.first_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #bfbfd1;
+    padding: 20px 0;
+}
+
+.first_row.primo {
+    border-top: 1px solid #bfbfd1;
+}
+
+/* Arrow down */
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* Stili del footer */
+.footer_container {
+    width: 100%;
+    background-color: black;
+    padding: 10% 5%;
+    margin-top: 50px;
+}
+
+.top_footer {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_footer li {
+    color: white;
+    line-height: 2;
+}
+
+.top_footer ul {
+    padding-right: 40px;
+}
+
+.top_footer h3 {
+    margin-bottom: 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom_footer {
+    width: 80%;
+    color: white;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.bottom_footer .fa-earth-americas {
+    padding-right: 5px;
+}
+
+.bottom_footer .fa-caret-up {
+    padding-left: 5px;
+}
+
+.footer_container .div_space {
+    margin-top: 50px;
+    margin-left: 10%;
+    width: 10%;
+}
