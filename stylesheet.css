@@ -464,6 +464,8 @@ ul {
 }
 
 .top_footer {
+    width: 80%;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -489,10 +491,11 @@ footer {
 
 .bottom_footer {
     display: flex;
-    width: 100%;
+    width: 80%;
     color: white;
-    justify-content: center;
     align-items: center;
+    margin: auto;
+    padding-top: 50px;
 }
 
 .bottom_footer .fa-earth-americas {
